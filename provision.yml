@@ -1,4 +1,9 @@
 - hosts: localhost
-  gather_facts: no
+  connection: local
+  gather_facts: False
+  environment:
+    http_proxy: "http://esptd6.vzbi.com:8080"
+    https_proxy: "http://esptd6.vzbi.com:8080"
+    socks_proxy: "esptd6.vzbi.com:8081"
   roles:
   - infra
