@@ -7,8 +7,6 @@ user_data: |
           TOWER_ADDRESS={{ tower_address }}
           HOST_CONFIG_KEY={{ host_config_key }}
           TEMPLATE_ID={{ template_id }}
-            
-          
           retry_attempts=10
           attempt=0
           while [[ $attempt -lt $retry_attempts ]]
